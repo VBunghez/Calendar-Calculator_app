@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='calculator.css'>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <button id="calendarBtn">Switch to Calendar</button>
+        <div class="calculator">
+            <div class="display">
+                <input id="displayScreen" type="text" placeholder="0">
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="Del" onclick="backSpc()">DEL</button>
+                    <button onclick="fact()">x!</button>
+                    <button class="btn">(</button>
+                    <button class="btn">)</button>
+                    <button class="btn">%</button>
+                    <button id="ac" onclick="clearDisplay()">AC</button>
+                </div>
+                <div class="row">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="pi()">π</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">÷</button>
+                </div>
+                <div class="row">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">×</button>
+                </div>
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="sqrt()">√</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .2em;">2</button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button id="eval" onclick="evalEquals()">=</button>
+                    <button class="btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
